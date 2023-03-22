@@ -9,11 +9,17 @@ RSpec.describe 'band pass filter' do
     expect(band_pass([100], 40, 1000)).to eq ([100])
     end 
 
-    it 'signal below lower level, returns new array' do
+  it 'signal below lower level, returns new array' do
       expect(band_pass([35], 40, 1000)).to eq ([40])
       end 
-
-
-
-
+      
+  it 'signals below lower level, returns new array' do
+        expect(band_pass([10, 50, 900], 40, 1000)).to eq ([40, 50, 900])
+        end 
 end
+
+      
+
+
+
+

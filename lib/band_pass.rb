@@ -8,6 +8,7 @@ sound_wave.each do |frequency|
   else
     by_passed << frequency
   end
+end
   return by_passed
   end
-end
+
