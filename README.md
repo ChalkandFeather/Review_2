@@ -13,10 +13,11 @@ Default setting where limits are not provided by the user: lower limit 40 || upp
 Method should reflect the default settings and option for updating settings.
 
 Output should reflect the new frequency range
+Empty arrays should return error.
 
 input | output
 
-[] (nil, nil) []
+[] (40, 100) []
 [100] [100]  
 [40, 50, 100, 1000] [40, 50, 100, 1000]
 [60,10,45,60,1500] (40, 1000) [60,40,45,60,1000]
