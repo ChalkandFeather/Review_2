@@ -17,7 +17,7 @@ Output should reflect the new frequency range
 input | output
 
 [] (nil, nil) []
-[100] [100] [100]
+[100] [100]  
 [40, 50, 100, 1000] [40, 50, 100, 1000]
 [60,10,45,60,1500] (40, 1000) [60,40,45,60,1000]
 
